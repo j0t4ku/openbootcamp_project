@@ -1,6 +1,7 @@
 
 import './App.css'
 import TaskListComponent from './components/container/task_list'
+import GreetingStyles from './components/pure/greetingStyles'
 import Ejemplo1 from './hooks/Ejemplo1'
 import Ejemplo2 from './hooks/Ejemplo2'
 import MiComponenteConContexto from './hooks/Ejemplo3'
@@ -15,9 +16,10 @@ function App() {
         {/* <Ejemplo1></Ejemplo1> */}
        {/*  <Ejemplo2></Ejemplo2> */}
        {/* <MiComponenteConContexto></MiComponenteConContexto> */}
-       <Ejemplo4 nombre={'juan'}>
+       {/* <Ejemplo4 nombre={'juan'}>
         <h3>Este contenido es un children para ti</h3>
-       </Ejemplo4>
+       </Ejemplo4> */}
+       <GreetingStyles name='Joel'></GreetingStyles>
       </div>
     </div>
   )
