@@ -7,6 +7,7 @@ import MiComponenteConContexto from './hooks/Ejemplo3'
 import Ejemplo4 from './hooks/Ejemplo4'
 // Import our custom CSS
 import './App.css'
+import Father from './components/container/father'
 
 function App() {
 
@@ -21,6 +22,9 @@ function App() {
         <h3>Este contenido es un children para ti</h3>
        </Ejemplo4> */}
        {/*<GreetingStyles name='Joel'></GreetingStyles>*/}
+
+       {/* Gestion de Eventos */}
+       {/* <Father></Father> */}
       </div>
     </div>
   )

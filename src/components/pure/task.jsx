@@ -7,7 +7,7 @@ import {BsFillTrash3Fill} from 'react-icons/bs';
 import {BsToggleOn, BsToggleOff} from 'react-icons/bs';
 
 
-const TaskComponent = ({ task }) => {
+const TaskComponent = ({ task, complete, deleteTask }) => {
     useEffect(() => {
         console.log("Tarea creada")
         return () => {
@@ -45,9 +45,9 @@ const TaskComponent = ({ task }) => {
  */
     function taskIconCompleted(){
         if(task.completed){
-            return <BsToggleOn style={{color:'green'}}></BsToggleOn>
+            return <BsToggleOn className='task-action' onClick={()=>complete(task)} style={{color:'green'}}></BsToggleOn>
         }else{
-            return <BsToggleOff></BsToggleOff>
+            return <BsToggleOff className='task-action' onClick={()=>complete(task)}></BsToggleOff>
         }
     }
 
@@ -66,7 +66,7 @@ const TaskComponent = ({ task }) => {
             <td className='align-middle'>
                 {/* Ejecucion de funcion para obtener iconos */}
                 {taskIconCompleted()}
-                <BsFillTrash3Fill style={{color:'tomato'}}></BsFillTrash3Fill>
+                <BsFillTrash3Fill onClick={()=>deleteTask(task)} style={{color:'tomato'}}></BsFillTrash3Fill>
             </td>
         </tr>
     );
@@ -74,7 +74,9 @@ const TaskComponent = ({ task }) => {
 
 
 TaskComponent.propTypes = {
-    task: PropTypes.instanceOf(Task)
+    task: PropTypes.instanceOf(Task),
+    complete: PropTypes.func.isRequired,
+    deleteTask: PropTypes.func.isRequired,
 };
 
 
