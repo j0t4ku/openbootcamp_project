@@ -8,23 +8,28 @@ import Ejemplo4 from './hooks/Ejemplo4'
 // Import our custom CSS
 import './App.css'
 import Father from './components/container/father'
+import OptionalRender from './components/pure/optionalRender'
 
 function App() {
 
   return (
     <div className="App">
       <div>
-        <TaskListComponent></TaskListComponent>
+        {/* <TaskListComponent></TaskListComponent> */}
         {/* <Ejemplo1></Ejemplo1> */}
-       {/*  <Ejemplo2></Ejemplo2> */}
-       {/* <MiComponenteConContexto></MiComponenteConContexto> */}
-       {/* <Ejemplo4 nombre={'juan'}>
+        {/*  <Ejemplo2></Ejemplo2> */}
+        {/* <MiComponenteConContexto></MiComponenteConContexto> */}
+        {/* <Ejemplo4 nombre={'juan'}>
         <h3>Este contenido es un children para ti</h3>
        </Ejemplo4> */}
-       {/*<GreetingStyles name='Joel'></GreetingStyles>*/}
+        {/*<GreetingStyles name='Joel'></GreetingStyles>*/}
 
-       {/* Gestion de Eventos */}
-       {/* <Father></Father> */}
+        {/* Gestion de Eventos */}
+        {/* <Father></Father> */}
+
+       {/* Ejemplo de Renderizado Condicional */}
+       <OptionalRender></OptionalRender>
+
       </div>
     </div>
   )
