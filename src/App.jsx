@@ -15,8 +15,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        {/* <TaskListComponent></TaskListComponent> */}
-        {/* <Ejemplo1></Ejemplo1> */}
+        <TaskListComponent></TaskListComponent>        {/* <Ejemplo1></Ejemplo1> */}
         {/*  <Ejemplo2></Ejemplo2> */}
         {/* <MiComponenteConContexto></MiComponenteConContexto> */}
         {/* <Ejemplo4 nombre={'juan'}>
@@ -28,7 +27,7 @@ function App() {
         {/* <Father></Father> */}
 
        {/* Ejemplo de Renderizado Condicional */}
-       <OptionalRender></OptionalRender>
+       {/* <OptionalRender></OptionalRender> */}
 
       </div>
     </div>
