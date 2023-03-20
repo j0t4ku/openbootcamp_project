@@ -9,13 +9,19 @@ import Ejemplo4 from './hooks/Ejemplo4'
 import './App.css'
 import Father from './components/container/father'
 import OptionalRender from './components/pure/optionalRender'
+import LoginFormik from './components/pure/forms/loginFormik'
+import RegisterFormik from './components/pure/forms/registerFormik'
 
 function App() {
 
   return (
     <div className="App">
       <div>
-        <TaskListComponent></TaskListComponent>        {/* <Ejemplo1></Ejemplo1> */}
+        {/* Projecto Final */}
+        {/* <TaskListComponent></TaskListComponent>   */}
+
+
+        {/* <Ejemplo1></Ejemplo1> */}
         {/*  <Ejemplo2></Ejemplo2> */}
         {/* <MiComponenteConContexto></MiComponenteConContexto> */}
         {/* <Ejemplo4 nombre={'juan'}>
@@ -28,6 +34,11 @@ function App() {
 
        {/* Ejemplo de Renderizado Condicional */}
        {/* <OptionalRender></OptionalRender> */}
+
+       {/* Ejemplo de Formik y Yup */}
+       {/* <LoginFormik></LoginFormik> */}
+       <RegisterFormik></RegisterFormik>
+
 
       </div>
     </div>
