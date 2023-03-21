@@ -18,7 +18,7 @@ function App() {
     <div className="App">
       <div>
         {/* Projecto Final */}
-        {/* <TaskListComponent></TaskListComponent>   */}
+        <TaskListComponent></TaskListComponent>  
 
 
         {/* <Ejemplo1></Ejemplo1> */}
@@ -37,7 +37,7 @@ function App() {
 
        {/* Ejemplo de Formik y Yup */}
        {/* <LoginFormik></LoginFormik> */}
-       <RegisterFormik></RegisterFormik>
+       {/* <RegisterFormik></RegisterFormik> */}
 
 
       </div>
