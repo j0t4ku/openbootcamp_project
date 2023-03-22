@@ -6,10 +6,10 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './index.css'
 
 import App from './App'
-import AppRouting from './AppRouting'
+import AppRoutingFinal from './AppRoutingFinal'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AppRouting></AppRouting>
+    <AppRoutingFinal></AppRoutingFinal>
   </React.StrictMode>,
 )

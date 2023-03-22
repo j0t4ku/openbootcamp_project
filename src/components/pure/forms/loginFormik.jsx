@@ -13,8 +13,8 @@ const loginSchema = Yup.object().shape(
     }
 )
 
-const navigate= useNavigate();
 const LoginFormik = () => {
+    const navigate= useNavigate();
     const initialCredentials = {
         email: '',
         password: ''
