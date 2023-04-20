@@ -14,7 +14,7 @@ const AxiosExample = () => {
             .then((r) => {
                 if(r.status==200){
                     console.log(r)
-                    setUser(r.data.results)
+                    setUser(r.data.results[0])
                 }
             })
             .catch((err) => {
